@@ -1,0 +1,110 @@
+.back {
+    height: 10px;
+    width: 100%;
+}
+
+form {
+    background-color:#d8484d; 
+    /*background-color: #cbd0d3b7;*/
+    padding: 64px; 
+    border-radius: 20px;
+    margin: 80px auto;   
+    margin-top: 80px;
+    max-width: 730px;
+    box-sizing: border-box;   
+}
+
+form h1 {
+    font-size: 36px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+
+    color: white
+    /* #d8484d; *//*var(--red)*/;
+}
+
+form img {
+    margin-left: 15vw;
+    margin-top: 5vh;
+    border-radius: 50%;
+}
+
+form fieldset  {
+    margin-top: 4vh;;
+    border: 0;
+}
+
+form .field {
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 24px;
+}
+
+form .field-group {
+    display: flex;
+}
+
+form input,
+form select {
+    background-color: #f0f0f5;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    outline: none; 
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form input:hover,
+form select:hover {
+    box-shadow: 5px 4px 3px rgb(77, 74, 74);
+    transition: 400ms;
+}
+
+form select { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: var(--blue);
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+form .field-group .field + .field {  
+    margin-left: 24px;
+}
+
+form button {
+    width: 9vw;
+    height: 6vh;
+    border-radius: 8px;
+    border: 0;
+    margin-top: 40px;
+    margin-left: 18vw;
+
+    outline: none;
+
+    background-color: var(--blue);
+    transition: background-color 400ms;
+    color: white;
+
+    font-size: 17px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form button:hover {
+    transition: 400ms;
+    background-color: var(--blue);
+    color: white;
+    box-shadow: 5px 4px 3px rgb(190, 188, 188);
+}
+

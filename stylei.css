@@ -1,0 +1,158 @@
+main #intro {
+    background-image: url("c.jpg");
+    background-repeat: no-repeat;
+
+    background-color: white;
+
+    width: 100%;
+    height: 370px;
+}
+
+main #intro h2 {
+    transition: 400ms;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: var(--blue);
+    text-shadow: white;
+
+    padding-top: 20vh;
+    padding-left: 6vw;
+}
+
+main #intro p {
+    padding-left: 4vw;
+    padding-bottom: 10vh;
+    padding-top: 3vh;
+    
+    color: var(--blue);
+    font-size: 17px;
+    font-weight: 600;
+    text-shadow: white;
+}
+
+main #days {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex: 1;
+
+    background-color: white;
+    border-radius: 8px 8px 0 0;
+    color: var(--blue);
+
+    margin: 30px;
+    margin-bottom: 0;
+    padding: 2vh 4vw;
+}
+
+main #hour {
+    background-color: #cbd0d3b7;
+    border-radius: 0 0 8px 8px;
+    
+    margin: 30px;
+    margin-top: 0;
+    padding: 20px 0 20px 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+main #hour a {
+    color: black;
+}
+
+main #hour p {
+    padding: 1vh;
+    margin: 8px;
+    text-align: center;
+    text-shadow: white;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* TESTE */
+
+[data-tooltip] {
+    position: relative;
+}
+  
+[data-tooltip]:after {
+    display: none;
+    position: absolute;
+    top: -5px;
+    padding: 1px 2px;
+    border-radius: 4px;
+    left: calc(100% + 2px);
+    content: attr(data-tooltip);
+
+    font-size: 14px;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+    background-color: white;
+    color: var(--blue);
+}
+  
+[data-tooltip]:hover:after {
+    display: block;
+}
+
+/* END TEST */
+
+main #hour .monday .blue,
+main #hour .tuesday .blue,
+main #hour .wednesday .blue,
+main #hour .thursday .blue,
+main #hour .friday .blue,
+main #hour .saturday .blue {
+    background-color: #275292;
+    box-shadow: 5px 4px 3px #000;
+
+    margin-left: 9vh;
+    width: 7vw;
+}
+
+main #hour .monday .red,
+main #hour .tuesday .red,
+main #hour .wednesday .red,
+main #hour .thursday .red,
+main #hour .friday .red,
+main #hour .saturday .red {
+    background-color: var(--red);
+    box-shadow: 5px 4px 3px #000;
+
+    margin-left: 9vh;
+    width: 7vw;
+}
+
+main #hour .monday .grey,
+main #hour .tuesday .grey,
+main #hour .wednesday .grey,
+main #hour .thursday .grey,
+main #hour .friday .grey,
+main #hour .saturday .grey {
+    background-color: grey;
+    box-shadow: 5px 4px 3px #000;
+
+    width: 7vw;
+    margin-left: 9vh;
+}
+
+main #hour .monday .white,
+main #hour .tuesday .white,
+main #hour .wednesday .white,
+main #hour .thursday .white,
+main #hour .friday .white,
+main #hour .saturday .white {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 4px 3px #000;
+    
+    width: 7vw;
+    margin-left: 9vh;
+}
+
+main #at {
+    height: 10px;
+    width: 100%;
+    background-color: #8a96ae;
+}
