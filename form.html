@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirme seu Cadastro</title>
+
+    <link rel="stylesheet" href="pdefinition.css">
+    <link rel="stylesheet" href="stylef.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>mentes</h1> 
+        <h3>Cursos</h3>
+        <h3>Blog</h3>
+        <h3>Agendamento</h3>
+        <h3>Sobre</h3>
+        <div class="border">
+            <h3>Matricule-se</h3>
+        </div>
+    </header>
+    <main>
+        <div class="back"></div>
+        <form name="user">
+            <h1>Preencha seus dados</h1>
+            <img src="avt.png" alt="Avatar" style="width:30%">
+            <fieldset> 
+                <div class="field">
+                    <label form="name">Nome</label> 
+                    <input type="text" name="name" placeholder="Digite seu nome completo" required>
+                </div>
+                <div class="field">
+                    <label form="matricula">Matrícula</label> 
+                    <input type="text" name="matricula" placeholder="Digite seu número de matrícula" required>
+                </div>
+                <div class="field-group">
+                    <div class="field">
+                        <label form="livro">Livro</label>
+                        <select name="livro" required>
+                            <option value="">Selecione</option>
+                            <option value="number">1</option>
+                            <option value="number">2</option>
+                            <option value="number">3</option>
+                            <option value="number">4</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label form="unidade">Unidade</label>
+                        <select name="unidade" required> 
+                            <option value="number">Selecione</option>                       
+                            <option value="number">1</option>
+                            <option value="number">2</option>
+                            <option value="number">3</option>
+                            <option value="number">4</option>
+                            <option value="number">5</option>
+                            <option value="number">6</option>
+                            <option value="number">7</option>
+                            <option value="number">8</option>
+                            <option value="number">9</option>
+                            <option value="number">10</option>
+                            <option value="number">11</option>
+                            <option value="number">12</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <div class="field">
+                        <label form="email">E-mail</label> 
+                        <input type="email" name="email" placeholder="Digite seu E-mail" required>
+                    </div>
+                    <div class="field">
+                        <label form="password">Senha</label>
+                        <input type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+                </div>
+                <button  type="submit">Enviar</button>
+            </fieldset>
+        </form>
+        <div class="back"></div>
+    </main>    
+    <footer>
+        <p>Made by Elisa Mesquita</p>
+    </footer>
+</body>
